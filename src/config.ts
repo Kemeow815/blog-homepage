@@ -106,8 +106,8 @@ export const SidebarConfig = {
 		// { name: "sidebar.externalLinks.qq", icon: "mingcute:qq-line", href: "https://jq.qq.com/?_wv=1027&k=hc3OKNED" },
 		{ name: "sidebar.externalLinks.rss", icon: "mingcute:rss-line", href: "/tnxg.opml " },
 		{ name: "sidebar.externalLinks.blog", icon: "mingcute:book-6-line", href: "https://shokax.kemeow.top" },
-		{ name: "sidebar.externalLinks.github", icon: "mingcute:github-line", href: "https://github.com/TNXG" },
-		{ name: "sidebar.externalLinks.telegram", icon: "mingcute:telegram-line", href: "https://t.me/illusion_ash" },
+		{ name: "sidebar.externalLinks.github", icon: "mingcute:github-line", href: "https://github.com//kemeow815" },
+		{ name: "sidebar.externalLinks.telegram", icon: "mingcute:telegram-line", href: "https://t.me/KemiaoJun" },
 	],
 };
 
