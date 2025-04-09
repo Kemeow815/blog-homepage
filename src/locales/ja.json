@@ -34,7 +34,6 @@
 			"qq": "QQ グループ",
 			"mail": "Mail",
 			"blog": "ブログ",
-			"github": "GitHub",
 			"telegram": "TG グループ"
 		},
 		"status": {
@@ -62,6 +61,69 @@
 			},
 			"suffix": "を作成しました。リーダーにインポートするか",
 			"followList": "Follow List. を購読する"
+		},
+		"submit": {
+			"button": "フレンドリンクを提出",
+			"title": "フレンドリンクを提出",
+			"description": "以下のフォームに記入して、あなたのウェブサイトをフレンドリンクとして提出してください。",
+			"form": {
+				"name": "サイト名",
+				"url": "サイトURL",
+				"avatar": "アバターURL",
+				"description": "サイトの説明",
+				"email": "メールアドレス",
+				"verify": "確認",
+				"code": "確認コード",
+				"rss": "RSS URL",
+				"techstack": "技術スタック",
+				"optional": "任意",
+				"techstackHint": "サイトで使用している技術をカンマで区切って入力してください",
+				"cancel": "キャンセル",
+				"submit": "提出",
+				"submitting": "提出中..."
+			},
+			"terms": {
+				"title": "申請ガイドライン",
+				"description": "提出前に、ガイドラインと利用規約をお読みください。",
+				"readMore": "完全なガイドラインを読む",
+				"agree": "利用規約に同意します",
+				"agreeDescription": "このチェックボックスをオンにすると、フレンドリンクのガイドラインに同意したことになります。"
+			},
+			"validation": {
+				"nameMin": "名前は1文字以上である必要があります",
+				"urlValid": "有効なURLを入力してください",
+				"avatarValid": "有効なアバターURLを入力してください",
+				"descriptionMin": "説明は2文字以上である必要があります",
+				"emailValid": "有効なメールアドレスを入力してください",
+				"codeRequired": "確認コードを入力してください",
+				"rssValid": "有効なRSS URLを入力してください",
+				"termsRequired": "利用規約に同意する必要があります"
+			},
+			"placeholder": {
+				"name": "私の素敵なサイト",
+				"url": "https://example.com",
+				"avatar": "https://example.com/avatar.png",
+				"description": "あなたのウェブサイトの簡単な説明",
+				"email": "your@email.com",
+				"code": "123456",
+				"rss": "https://example.com/feed",
+				"techstack": "React, Next.js, Tailwind (カンマ区切り)"
+			},
+			"toast": {
+				"verificationSent": "確認コードが送信されました",
+				"checkEmail": "メールを確認して確認コードを確認してください",
+				"error": "エラー",
+				"verificationFailed": "確認コードの送信に失敗しました",
+				"success": "成功",
+				"submitSuccess": "フレンドリンクが正常に提出されました",
+				"submitFailed": "フレンドリンクの提出に失敗しました"
+			},
+			"step": "ステップ",
+			"of": "/",
+			"optional": {
+				"title": "オプション情報",
+				"description": "これらのフィールドはオプションですが、サイトをよりよく理解するのに役立ちます。"
+			}
 		}
 	},
 	"recently": {
@@ -72,16 +134,13 @@
 		"switchLanguage": "言語を切り替え"
 	},
 	"languages": {
-		"en": "英語",
 		"zh": "中国語",
 		"ja": "日本語",
 		"searchLanguages": "言語を検索",
 		"noLanguageFound": "言語が存在しません"
 	},
 	"currentLanguage": "現在の言語",
-	"settings": "設定",
 	"settingsDescription": "ここでお好みを選んでください",
-	"theme": "テーマ",
 	"themes": {
 		"light": "ライト",
 		"dark": "ダーク",
@@ -89,7 +148,5 @@
 		"noThemeFound": "テーマが見つかりません",
 		"searchThemes": "テーマを検索",
 		"selectTheme": "テーマを選択"
-	},
-	"currentTheme": "現在のテーマ",
-	"language": "言語"
+	}
 }

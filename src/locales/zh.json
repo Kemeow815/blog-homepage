@@ -63,6 +63,76 @@
 			},
 			"suffix": "可导入阅读器或",
 			"followList": "订阅 Follow List."
+		},
+		"submit": {
+			"button": "提交友链",
+			"title": "提交友链",
+			"description": "请填写以下表单来提交您的网站作为友链。",
+			"step": "步骤",
+			"of": "共",
+			"form": {
+				"name": "网站名称",
+				"url": "网站地址",
+				"avatar": "头像地址",
+				"description": "网站描述",
+				"email": "邮箱",
+				"verify": "发送验证码",
+				"sent": "已发送",
+				"code": "验证码",
+				"rss": "RSS地址",
+				"techstack": "技术栈",
+				"optional": "可选",
+				"optionalFields": "可选字段",
+				"optionalDescription": "以下字段是可选的，但填写它们可以帮助我们更好地了解您的网站。",
+				"techstackHint": "请用逗号分隔您网站使用的技术",
+				"cancel": "取消",
+				"submit": "提交",
+				"submitting": "提交中...",
+				"next": "下一步",
+				"back": "返回",
+				"rssHint": "添加你的 RSS 订阅源网址以分享你最新的内容。"
+			},
+			"optional": {
+				"title": "可选信息",
+				"description": "以下字段是可选的，但填写它们可以帮助我们更好地了解您的网站。"
+			},
+			"terms": {
+				"title": "申请须知",
+				"description": "在提交友链之前，请阅读我们的指南和服务条款。",
+				"readMore": "阅读完整指南",
+				"agree": "我同意条款和条件",
+				"agreeDescription": "勾选此框，即表示您同意我们的友链指南。",
+				"rssHint": "添加您的 RSS 源 URL 以分享您的最新内容。"
+			},
+			"validation": {
+				"nameMin": "名称至少需要1个字符",
+				"urlValid": "请输入有效的URL",
+				"avatarValid": "请输入有效的头像URL",
+				"descriptionMin": "描述至少需要2个字符",
+				"emailValid": "请输入有效的邮箱",
+				"codeRequired": "请输入验证码",
+				"rssValid": "请输入有效的RSS URL",
+				"termsRequired": "您必须同意条款和条件"
+			},
+			"placeholder": {
+				"name": "我的网站",
+				"url": "https://example.com",
+				"avatar": "https://example.com/avatar.png",
+				"description": "关于您网站的简短描述",
+				"email": "your@email.com",
+				"code": "123456",
+				"rss": "https://example.com/feed",
+				"techstack": "React, Next.js, Tailwind (逗号分隔)"
+			},
+			"toast": {
+				"verificationSent": "验证码已发送",
+				"checkEmail": "请查看您的邮箱获取验证码",
+				"error": "错误",
+				"verificationFailed": "验证码发送失败",
+				"success": "成功",
+				"submitSuccess": "您的友链已成功提交",
+				"submitFailed": "友链提交失败"
+			}
 		}
 	},
 	"recently": {

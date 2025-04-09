@@ -2,6 +2,7 @@
 
 import type { Arch } from "@/lib/icon";
 import type React from "react";
+import { SubmitFriendForm } from "@/components/submit-friend";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -12,6 +13,15 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+interface Friend {
+	name: string;
+	url: string;
+	avatar: string;
+	description: string;
+	techstack: string[];
+	state: number;
+}
 
 interface FriendsProps {
 	friends: Friend[];
@@ -25,30 +35,42 @@ export const FriendsLayout: React.FC<FriendsProps> = ({ friends }) => {
 		const shuffleArray = (array: Friend[]) => {
 			for (let i = array.length - 1; i > 0; i--) {
 				const j = Math.floor(Math.random() * (i + 1))
-        ;[array[i], array[j]] = [array[j], array[i]];
+					;[array[i], array[j]] = [array[j], array[i]];
 			}
 		};
 
 		const newShuffledFriends = [...friends];
 		shuffleArray(newShuffledFriends);
-		setShuffledFriends(newShuffledFriends);
+		// 使用 setTimeout 来异步设置状态，避免在 useEffect 中直接调用 setState
+		const timerId = setTimeout(() => {
+			setShuffledFriends(newShuffledFriends);
+		}, 0);
 
 		// Add touch device support for hover effect
 		const cards = document.querySelectorAll("#friend-card > *");
+
+		// Define named functions for event listeners
+		const handleTouchStart = (e: Event) => {
+			const element = e.currentTarget as HTMLElement;
+			element.classList.add("group-hover");
+		};
+
+		const handleTouchEnd = (e: Event) => {
+			const element = e.currentTarget as HTMLElement;
+			element.classList.remove("group-hover");
+		};
+
 		cards.forEach((card) => {
-			card.addEventListener("touchstart", () => {
-				card.classList.add("group-hover");
-			});
-			card.addEventListener("touchend", () => {
-				card.classList.remove("group-hover");
-			});
+			card.addEventListener("touchstart", handleTouchStart);
+			card.addEventListener("touchend", handleTouchEnd);
 		});
 
 		return () => {
 			cards.forEach((card) => {
-				card.removeEventListener("touchstart", () => {});
-				card.removeEventListener("touchend", () => {});
+				card.removeEventListener("touchstart", handleTouchStart);
+				card.removeEventListener("touchend", handleTouchEnd);
 			});
+			clearTimeout(timerId);
 		};
 	}, [friends]);
 
@@ -61,7 +83,7 @@ export const FriendsLayout: React.FC<FriendsProps> = ({ friends }) => {
 				transition={{ duration: 0.5 }}
 			>
 				<mark className="line">{t(FriendsConfig.title)}</mark>
-				<p className="text-muted-foreground mt-6 max-w-2xl text-sm leading-relaxed">
+				<p className="mt-6 max-w-2xl text-sm leading-relaxed text-muted-foreground">
 					{t(FriendsConfig.description.text)}
 					{" "}
 					<mark>
@@ -100,8 +122,11 @@ export const FriendsLayout: React.FC<FriendsProps> = ({ friends }) => {
 						</Link>
 					</mark>
 				</p>
+				<div className="flex justify-start">
+					<SubmitFriendForm />
+				</div>
 			</motion.h1>
-			<div className="animate-in fade-in container mx-auto mt-2 flex flex-col items-center px-4 py-12 duration-500">
+			<div className="container mx-auto mt-2 flex flex-col items-center px-4 py-12 duration-500 animate-in fade-in">
 				<div id="friend-card" className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4">
 					{shuffledFriends.map(friend => (
 						<Card
@@ -119,16 +144,16 @@ export const FriendsLayout: React.FC<FriendsProps> = ({ friends }) => {
 									</div>
 									<div
 										id="friend-card-hover"
-										className="bg-background/60 absolute inset-0 flex flex-col items-center justify-center p-4 text-center opacity-0 backdrop-blur-md transition-opacity duration-300 group-hover:opacity-100"
+										className="absolute inset-0 flex flex-col items-center justify-center bg-[#ffffff] p-4 text-center opacity-0 backdrop-blur-md transition-opacity duration-300 group-hover:opacity-100 dark:bg-[#121212]/60"
 									>
 										<h3 className="text-shadow-sm mb-2 text-base font-semibold sm:text-lg">{friend.name}</h3>
 										<p
-											className="text-muted-foreground text-shadow-sm mb-2 overflow-hidden text-ellipsis text-xs sm:mb-4 sm:text-sm"
+											className="text-shadow-sm mb-2 overflow-hidden text-ellipsis text-xs text-muted-foreground sm:mb-4 sm:text-sm"
 											style={{ display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical" }}
 										>
 											{friend.description}
 										</p>
-										<p className="text-muted-foreground text-shadow-sm mb-2 max-w-full truncate text-xs sm:mb-4">
+										<p className="text-shadow-sm mb-2 max-w-full truncate text-xs text-muted-foreground sm:mb-4">
 											{friend.url}
 										</p>
 										<div className="mt-2 flex flex-wrap justify-center gap-2">
@@ -136,7 +161,7 @@ export const FriendsLayout: React.FC<FriendsProps> = ({ friends }) => {
 												<TooltipProvider key={index} delayDuration={100}>
 													<Tooltip>
 														<TooltipTrigger>
-															<Icon icon={getArchIcon(tech as Arch)} className="text-primary size-6" />
+															<Icon icon={getArchIcon(tech as Arch)} className="size-6 text-primary" />
 														</TooltipTrigger>
 														<TooltipContent>
 															<p>{tech}</p>

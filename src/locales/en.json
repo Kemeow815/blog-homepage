@@ -27,14 +27,11 @@
 			"recently": "Recently",
 			"friends": "Links"
 		},
-		"copyright": {
-			"text": "© {date} TiaNXianG."
-		},
+		"copyright": {},
 		"externalLinks": {
 			"qq": "QQ Group",
 			"mail": "Mail",
 			"blog": "Blog",
-			"github": "GitHub",
 			"telegram": "Telegram Group"
 		},
 		"status": {
@@ -62,6 +59,70 @@
 			},
 			"suffix": "which can be imported into a reader or",
 			"followList": "subscribe to the Follow List."
+		},
+		"submit": {
+			"button": "Submit Friend Link",
+			"title": "Submit Friend Link",
+			"description": "Fill out the form below to submit your website as a friend link.",
+			"form": {
+				"name": "Website Name",
+				"url": "Website URL",
+				"avatar": "Avatar URL",
+				"description": "Description",
+				"email": "Email",
+				"verify": "Verify",
+				"sent": "Sent",
+				"code": "Verification Code",
+				"rss": "RSS URL",
+				"techstack": "Tech Stack",
+				"optional": "optional",
+				"techstackHint": "Comma separated list of technologies used on your site",
+				"cancel": "Cancel",
+				"submit": "Submit",
+				"submitting": "Submitting..."
+			},
+			"terms": {
+				"title": "Submission Guidelines",
+				"description": "Before submitting, please read our guidelines and terms of service.",
+				"readMore": "Read full guidelines",
+				"agree": "I agree to the terms and conditions",
+				"agreeDescription": "By checking this box, you agree to our friend link guidelines."
+			},
+			"validation": {
+				"nameMin": "Name must be at least 1 characters",
+				"urlValid": "Please enter a valid URL",
+				"avatarValid": "Please enter a valid avatar URL",
+				"descriptionMin": "Description must be at least 2 characters",
+				"emailValid": "Please enter a valid email",
+				"codeRequired": "Please enter the verification code",
+				"rssValid": "Please enter a valid RSS URL",
+				"termsRequired": "You must agree to the terms and conditions"
+			},
+			"placeholder": {
+				"name": "My Awesome Site",
+				"url": "https://example.com",
+				"avatar": "https://example.com/avatar.png",
+				"description": "A brief description of your website",
+				"email": "your@email.com",
+				"code": "123456",
+				"rss": "https://example.com/feed",
+				"techstack": "React, Next.js, Tailwind (comma separated)"
+			},
+			"toast": {
+				"verificationSent": "Verification code sent",
+				"checkEmail": "Please check your email for the verification code",
+				"error": "Error",
+				"verificationFailed": "Failed to send verification code",
+				"success": "Success",
+				"submitSuccess": "Your friend link has been submitted successfully",
+				"submitFailed": "Failed to submit friend link"
+			},
+			"step": "Step",
+			"of": "of",
+			"optional": {
+				"title": "Optional Information",
+				"description": "These fields are optional but help us better understand your site."
+			}
 		}
 	},
 	"recently": {
@@ -72,16 +133,13 @@
 		"switchLanguage": "Switch Language"
 	},
 	"languages": {
-		"en": "English",
 		"zh": "Chinese",
 		"ja": "Japanese",
 		"searchLanguages": "Search Languages",
 		"noLanguageFound": "Language not found"
 	},
 	"currentLanguage": "Current Language",
-	"settings": "Settings",
 	"settingsDescription": "Choose your preferences here",
-	"theme": "Theme",
 	"themes": {
 		"light": "Light",
 		"dark": "Dark",
@@ -89,7 +147,5 @@
 		"noThemeFound": "Theme not found",
 		"searchThemes": "Search Themes",
 		"selectTheme": "Select Theme"
-	},
-	"currentTheme": "Current Theme",
-	"language": "Language"
+	}
 }
