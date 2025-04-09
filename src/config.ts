@@ -6,23 +6,23 @@ export const SiteConfig = {
 	title: "site.title",
 	master: "site.master",
 	description: "site.description",
-	SiteURL: "https://tnxg.top",
-	masterEmail: "tnxg@outlook.jp",
-	Avatar: "https://api-space.tnxg.top/avatar?s=qq",
+	SiteURL: "https://www.kemiao.online",
+	masterEmail: "kemiaofx@163.com",
+	Avatar: "https://cdn.jsdelivr.net/gh/kmfx/tuchuang@main/img/202503171226033.png",
 	followListURL: "https://app.follow.is/share/lists/104218695533715456",
 	opmlURL: "/tnxg.opml",
 	Features: {
 		StatusDot: true,
 		StatusAPI: true,
 	},
-	keywords: ["天翔TNXG", "TNXG", "个人主页", "天翔TNXGの自留地", "homepage", "nextjs"],
+	keywords: ["克喵爱吃卤面", "Ke Miao", "个人主页", "克喵の自留地", "homepage", "nextjs"],
 	Author: {
 		Name: "site.author.name",
-		Email: "tnxg@outlook.jp",
+		Email: "kemiao@kmblog.icu",
 	},
 	SocialMedia: {
-		Twitter: "https://twitter.com/iykrzu",
-		GitHub: "https://github.com/tnxg",
+		Twitter: "https://twitter.com/kemiaosw",
+		GitHub: "https://github.com/Kemeow815",
 	},
 	favicon: {
 		default: "/favicon.ico",
@@ -39,22 +39,27 @@ export const SiteConfig = {
 			{
 				name: "site.home.socialLinks.blog",
 				icon: "mingcute:book-line",
-				url: "https://tnxgmoe.com",
+				url: "https:/www.kemiao.online",
+			},
+			{
+				name: "site.home.socialLinks.rss",
+				icon: "mingcute:rss-line",
+				url: "/feed/index.xml",
 			},
 			{
 				name: "site.home.socialLinks.github",
 				icon: "mingcute:github-line",
-				url: "https://github.com/TNXG",
+				url: "https://github.com/Kemeow815",
 			},
 			{
 				name: "site.home.socialLinks.twitter",
 				icon: "mingcute:twitter-line",
-				url: "https://twitter.com/iykrzu",
+				url: "https://twitter.com/kemiaosw",
 			},
 			{
 				name: "site.home.socialLinks.telegram",
 				icon: "mingcute:telegram-line",
-				url: "https://telegram.me/iykrzu",
+				url: "https://telegram.me/Kemiaojun",
 			},
 		],
 	},
@@ -84,12 +89,13 @@ export const SiteConfig = {
 
 export const SidebarConfig = {
 	sections: [
+		// { name: "sidebar.sections.about", icon: "mingcute:rss-line", href: "/rss" },
 		{ name: "sidebar.sections.home", icon: "mingcute:home-6-line", href: "/" },
 		{ name: "sidebar.sections.recently", icon: "mingcute:bubble-line", href: "/recently" },
-		{ name: "sidebar.sections.friends", icon: "mingcute:link-fill", href: "/friends" },
+		{ name: "sidebar.sections.friends", icon: "mingcute:link-fill", href: "https://blog-v3.kemeow.top/link" },
 	],
 	copyright: {
-		StartDate: 2019,
+		StartDate: 2025,
 		text: "sidebar.copyright.text",
 		license: {
 			name: "CC BY-NC-SA 4.0",
@@ -97,8 +103,9 @@ export const SidebarConfig = {
 		},
 	},
 	externalLinks: [
-		{ name: "sidebar.externalLinks.qq", icon: "mingcute:qq-line", href: "https://jq.qq.com/?_wv=1027&k=hc3OKNED" },
-		{ name: "sidebar.externalLinks.blog", icon: "mingcute:book-6-line", href: "https://tnxgmoe.com" },
+		// { name: "sidebar.externalLinks.qq", icon: "mingcute:qq-line", href: "https://jq.qq.com/?_wv=1027&k=hc3OKNED" },
+		{ name: "sidebar.externalLinks.rss", icon: "mingcute:rss-line", href: "/tnxg.opml " },
+		{ name: "sidebar.externalLinks.blog", icon: "mingcute:book-6-line", href: "https://shokax.kemeow.top" },
 		{ name: "sidebar.externalLinks.github", icon: "mingcute:github-line", href: "https://github.com/TNXG" },
 		{ name: "sidebar.externalLinks.telegram", icon: "mingcute:telegram-line", href: "https://t.me/illusion_ash" },
 	],
@@ -110,7 +117,7 @@ export const FriendsConfig = {
 		text: "friends.description.text",
 		link: {
 			text: "friends.description.link.text",
-			url: "https://tnxgmoe.com/friends",
+			url: "https://shokax.kemeow.top/friends",
 		},
 		suffix: "friends.description.suffix",
 	},
@@ -123,18 +130,18 @@ export const RecentlyConfig = {
 
 export const APIConfig = {
 	misskey: {
-		user: "a5w9h61bjkj1014r",
+		user: "a5vwhj6ok3v21cud",
 		// eslint-disable-next-line node/prefer-global/process
 		token: process.env.MISSKEY_TOKEN,
 	},
-	baseURL: "https://mx.tnxg.top/api/v2",
+	baseURL: "https://nya.one/api/v2",
 	endpoints: {
 		ncm: "https://netease-api.kemiaosw.top/", // 某个还能用的网易云音乐API
 		// 自制的后端api，详见https://github.com/TNXG/space-api/
 		friends: "https://api-space.tnxg.top/links",
 		space_status: "https://api-space.tnxg.top/status", // 实际获取无参和带s=n的状态
 		// misskeyapi接口
-		misskey: "https://afhub.top",
+		misskey: "https://nya.one",
 		// 实际上以下的api都是Mix-Space提供的，这里提供一个方便更换的接口
 		recently: "https://mx.tnxg.top/api/v2/recently/all",
 		status: "https://api-space.tnxg.top/status/getReportMsg",

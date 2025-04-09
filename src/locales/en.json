@@ -1,19 +1,20 @@
 {
 	"site": {
 		"title": "TNXG's Space",
-		"master": "天翔TNXG",
+		"master": "克喵",
 		"description": "Tomorrow has yet to come, may hope remain in the heart",
 		"author": {
-			"name": "天翔TNXG"
+			"name": "克喵"
 		},
 		"home": {
 			"greeting": "Hello",
 			"namePrefix": "I'm",
-			"nameJP": "いゆくるず iykrzu",
-			"nameEN": "TiaNXianG",
-			"motto": "Tomorrow has yet to come, may hope remain in the heart",
+			"nameJP": "クミャオは煮込み麺に目がない",
+			"nameEN": "Ke Miao",
+			"motto": "All journeys must eventually come to an end~",
 			"socialLinks": {
 				"blog": "Blog",
+				"rss": "RSS",
 				"github": "GitHub",
 				"twitter": "Twitter",
 				"telegram": "Telegram"
@@ -31,6 +32,7 @@
 		},
 		"externalLinks": {
 			"qq": "QQ Group",
+			"mail": "Mail",
 			"blog": "Blog",
 			"github": "GitHub",
 			"telegram": "Telegram Group"
@@ -49,7 +51,7 @@
 		"description": {
 			"text": "You can click",
 			"link": {
-				"text": "朋友们 - 天翔TNXGの空间站"
+				"text": "朋友们 - 克喵の空间站"
 			},
 			"suffix": "to apply for a link!"
 		},

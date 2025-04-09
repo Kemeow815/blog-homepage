@@ -1,19 +1,20 @@
 {
 	"site": {
-		"title": "天翔TNXGの自留地",
-		"master": "天翔TNXG",
+		"title": "克喵の小栈",
+		"master": "克喵",
 		"description": "明日尚未到来，希望凝于心上",
 		"author": {
-			"name": "天翔TNXG"
+			"name": "克喵"
 		},
 		"home": {
 			"greeting": "Hello",
 			"namePrefix": "I'm",
-			"nameJP": "いゆくるず iykrzu",
-			"nameEN": "TiaNXianG",
-			"motto": "明日尚未到来，希望凝于心上",
+			"nameJP": "クミャオは煮込み麺に目がない",
+			"nameEN": "Ke Miao",
+			"motto": "每一段旅行都有终点~",
 			"socialLinks": {
 				"blog": "Blog",
+				"rss": "RSS",
 				"github": "GitHub",
 				"twitter": "Twitter",
 				"telegram": "Telegram"
@@ -27,10 +28,12 @@
 			"friends": "友链"
 		},
 		"copyright": {
-			"text": "© {date} 天翔TNXG."
+			"text": "© {date} 克喵."
 		},
 		"externalLinks": {
 			"qq": "QQ群",
+			"rss": "RSS",
+			"mail": "邮箱",
 			"blog": "博客",
 			"github": "GitHub",
 			"telegram": "TG群"
@@ -49,7 +52,7 @@
 		"description": {
 			"text": "你可以点击",
 			"link": {
-				"text": "朋友们 - 天翔TNXGの空间站"
+				"text": "朋友们 - 克喵の空间站"
 			},
 			"suffix": "来申请友链哦！"
 		},
@@ -64,7 +67,7 @@
 	},
 	"recently": {
 		"title": "动态",
-		"description": "每一步都在寻找，属于自己的光。\n\n在这条路上，悄悄走过每个晨曦 | 不需要大声宣告，也不怕孤单\n不必急于追寻远方，步伐已在心中轻轻起舞 | 每一次转身，都是心底的坚定\n偶尔迷失，也不过是寻找到更好的自己 | 在平凡的日子里，悄然期待着某个瞬间的不同\n只是那些小小的坚持，让一切变得真实而温暖 | 直到有一天，所有的点滴拼凑成属于我的故事。\n\n今天的我，正一步一步走向明天的自己"
+		"description": "这是克喵爱吃卤面的主页，取自于[天翔TNXGの自留地](https://github.com/TNXG/tnxg-homepage)，没搞服务器，所以动态的存在依赖于大佬的api，什么时候api消失，我可能就不会用这个了。\n\n今天的我，正一步一步走向明天的自己~"
 	},
 	"common": {
 		"switchLanguage": "切换语言"

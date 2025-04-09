@@ -1,19 +1,20 @@
 {
 	"site": {
-		"title": "天翔TNXGの自留地",
-		"master": "天翔TNXG",
+		"title": "克喵の自留地",
+		"master": "克喵",
 		"description": "明日はまだ来ない、希望を心に込めて",
 		"author": {
-			"name": "天翔TNXG"
+			"name": "克喵"
 		},
 		"home": {
 			"greeting": "こんにちは",
 			"namePrefix": "私は",
-			"nameJP": "いゆくるず iykrzu",
-			"nameEN": "TiaNXianG",
-			"motto": "明日はまだ来ない、希望を心に込めて",
+			"nameJP": "クミャオは煮込み麺に目がない",
+			"nameEN": "Ke Miao",
+			"motto": "すべての旅に、必ず終点は訪れる~",
 			"socialLinks": {
 				"blog": "ブログ",
+				"rss": "RSS",
 				"github": "GitHub",
 				"twitter": "Twitter",
 				"telegram": "Telegram"
@@ -27,10 +28,11 @@
 			"friends": "リンク"
 		},
 		"copyright": {
-			"text": "© {date} 天翔TNXG."
+			"text": "© {date} 克喵."
 		},
 		"externalLinks": {
 			"qq": "QQ グループ",
+			"mail": "Mail",
 			"blog": "ブログ",
 			"github": "GitHub",
 			"telegram": "TG グループ"
@@ -49,7 +51,7 @@
 		"description": {
 			"text": "クリックして",
 			"link": {
-				"text": "朋友们 - 天翔TNXGの空间站"
+				"text": "朋友们 - 克喵の空间站"
 			},
 			"suffix": "でリンクを申請できます！"
 		},
