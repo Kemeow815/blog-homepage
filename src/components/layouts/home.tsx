@@ -40,7 +40,7 @@ export const HomeLayout: React.FC = () => {
 								asChild
 								className="gap-2"
 							>
-								<a href={link.href} target="_blank" rel="noopener noreferrer">
+								<a href={link.url} target="_blank" rel="noopener noreferrer">
 									<Icon icon={link.icon} width="24" height="24" />
 									<span>{t(link.name)}</span>
 								</a>
